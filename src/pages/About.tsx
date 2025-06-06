@@ -80,7 +80,7 @@ const About = () => {
         subtitle={t('about_subtitle')}
         showCta={false}
         reversed={true}
-        image="/image-uploads/21d35256-3096-4d78-a011-fc301bf0cc1c.png"
+        image="image-uploads/21d35256-3096-4d78-a011-fc301bf0cc1c.png"
       />
 
       {/* Doctor's Profile */}

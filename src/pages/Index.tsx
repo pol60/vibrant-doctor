@@ -97,7 +97,7 @@ const Index = () => {
       <Hero 
         title={t('hero_title')}
         subtitle={t('hero_subtitle')}
-        image="/image-uploads/21d35256-3096-4d78-a011-fc301bf0cc1c.png"
+        image="image-uploads/21d35256-3096-4d78-a011-fc301bf0cc1c.png"
       />
 
       {/* Stats Section */}
