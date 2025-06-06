@@ -17,6 +17,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: '/<REPO_NAME>/', // Замените <REPO_NAME> на имя вашего репозитория
   build: {
     rollupOptions: {
       output: {
