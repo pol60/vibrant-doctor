@@ -310,8 +310,11 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
   }, [language]);
 
   // Translation function
-  const t = (key: string): string => {
-    console.log('Translation request:', { key, language, translation: translations[language][key] });
+  const t = (key: unknown): string => {
+    if (typeof key !== 'string') {
+      console.warn('Translation request with non-string key:', key);
+      return '';
+    }
     return translations[language][key] || translations['en'][key] || key;
   };
 
