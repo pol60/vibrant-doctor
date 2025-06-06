@@ -214,7 +214,7 @@ const Conditions = () => {
                 className="bg-card-gradient p-4 sm:p-5 rounded-lg flex items-center"
               >
                 <Check className="w-4 h-4 sm:w-5 sm:h-5 text-medical-500 mr-2 sm:mr-3 flex-shrink-0" />
-                <span className="text-sm sm:text-base text-gray-700">{condition}</span>
+                <span className="text-sm sm:text-base text-gray-700">{condition.title}</span>
               </motion.div>
             ))}
           </div>
@@ -297,13 +297,7 @@ const Conditions = () => {
                                 <h4 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
                                   {t('treatment_options')}
                                 </h4>
-                                <ul className="list-disc list-inside space-y-1">
-                                  {condition.treatment.map((treatment, idx) => (
-                                    <li key={idx} className="text-sm sm:text-base text-gray-600">
-                                      {treatment}
-                                    </li>
-                                  ))}
-                                </ul>
+                                <p className="text-sm sm:text-base text-gray-600">{condition.treatment}</p>
                               </div>
                             )}
                           </div>
