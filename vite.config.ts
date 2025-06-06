@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/<REPO_NAME>/', // Замените <REPO_NAME> на имя вашего репозитория
+  base: '/vibrant-doctor/', // Указано имя репозитория для GitHub Pages
   build: {
     rollupOptions: {
       output: {
